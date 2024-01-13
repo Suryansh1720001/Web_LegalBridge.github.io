@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            background-color: #F5F5F5; /* Set background color to gray */
+            color: #3F2305;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Center both horizontally and vertically */
+        }
+
+        #container {
+            background-color: #F5F5F5; /* Set background color to gray */
+            width: 80%; /* Set the width of the container */
+            min-height: 80vh; /* Set minimum height to 80vh */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px; /* Add padding to separate content from the edges */
+        }
+
+        #textAboveButton {
+            font-size: 2em;
+            margin-bottom: 20px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column; /* Arrange child elements in a column */
+            align-items: center;
+            justify-content: center;
+        }
+
+        #logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px; /* Add margin at the bottom to separate logo from text */
+        }
+
+        #myButton {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: not-allowed; /* Set cursor to not-allowed when button is disabled */
+            background-color: #DFD7BF;
+            color: white;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            #container {
+                width: 100%; /* Adjust width for smaller screens */
+            }
+        }
+    </style>
+    <title>Button Page</title>
+</head>
+<body>
+
+    <div id="container">
+        <div id="textAboveButton">
+            <img id="logo" src="logo.png" alt="Logo">
+            <span>Currently, LegalBridge is in the process of Patent, and the code button will be activated once the process reaches its concluding stage.</span>
+        </div>
+
+        <button id="myButton" disabled>GitHub code link</button>
+
+    </div>
+
+</body>
+</html>
